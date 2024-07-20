@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissor Game</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <!-- Header  ====================================================================================-->
+    <div class="diOutput">
+        <h2 id="heading">ROCK <br> PAPER <br> SCISSORS</h2>
+        <div class="twoBox">
+            <div class="comScore">
+                <p>COMPUTER <br> SCORE</p>
+                <p id="Cpoints">0</p>
+            </div>
+            <div class="userScore">
+                <p>YOUR <br> SCORE</p>
+                <p id="Upoints">0</p>
+            </div>
+        </div>
+    </div>
+    <!-- Play Game =================================================================================================-->
+        <div class="game-con">
+            <div class="info">
+                <p class="user">You picked</p>
+                <p class="machine">PC picked</p>
+            </div>
+            <div class="option">
+                <div class="conL1 line">
+                    <div>
+                    <img src="./image/Line 1.png" alt="line1" class="line1">
+                   </div>
+                    <img src="./image/Line 3.png" alt="line3" class="line3">
+                    <img src="./image/Line 2.png" alt="line2" class="line2">
+                </div>
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="sci-con con">
+                                <div class="item">
+                                    <img src="./image/scissor.png" alt="scissors">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="rock-con con">
+                                <div class="item">
+                                    <img src="./image/rock.png" alt="rock">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="paper-con con">
+                                <div class="item">
+                                    <img src="./image/paper.png" alt="paper">
+                                </div>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="sci-con c1 computer">
+                                <div class="item">
+                                    <img src="./image/scissor.png" alt="scissors">
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+                </div>
+                
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="rock-con c2 computer">
+                                <div class="item">
+                                    <img src="./image/rock.png" alt="rock">
+                                </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="shade1">
+                    <div class="shade2">
+                        <div class="shade3">
+                            <div class="paper-con c3 computer">
+                                <div class="item">
+                                    <img src="./image/paper.png" alt="paper">
+                                </div>
+                            </div>
+                        </div>     
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <div class="win-modal">
+            <h1 class="winner">YOU WON</h1>
+            <h3 class="winner1">AGAINST PC</h3>
+            <button class="play">PLAY AGAIN</button>
+        </div>
+        <div class="lose-modal">
+            <h1 class="winner">YOU LOST</h1>
+            <h3 class="winner1">AGAINST PC</h3>
+            <button class="play1">PLAY AGAIN</button>
+        </div>
+        <div class="tie-modal">
+            <h1 class="winner">TIE UP</h1>
+            <button class="replay">REPLAY</button>
+        </div>
+
+        <div class="winner-screen">
+            <div class="trophy">
+              <img src="./image/Group 5.png" alt="trophy image" />
+              <img src="./image/Vector.png" alt="stars" class="stars" />
+            </div>
+            <div class="hurrayMsg">HURRAY!!</div>
+            <div class="winMsg">YOU WON THE GAME</div>
+            <button class="winnerPlayBtn">PLAY AGAIN</button>
+        </div>
+    <!-- Rules Box =========================================================================================-->
+    <div class="parent_container">
+        <div class="rules_container">
+            <div class="cancle_btn">
+                <img id="C_image" src="./image/X.png" alt="cancle">
+            </div>
+            <div class="list_container">
+                <h2 id="heading_2">Game Rules</h2>
+                <div class="list">
+                    <div id="box"></div>Rock beats scissors, scissors beat paper, and paper beats rock.
+                </div>
+                <div class="list">
+                    <div id="box"></div>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot”
+                    or just “rock, paper, scissors.”
+                </div>
+                <div class="list">
+                    <div id="box"></div>Use rock, paper, scissors to settle minor decisions or simply play to pass
+                    the time
+                </div>
+                <div class="list">
+                    <div id="box"></div>If both players lay down the same hand, each player lays down another hand
+                </div>
+            </div>
+        </div>
+        <div class="btn_container">
+            <button class="rule_btn">RULES</button>
+            <button class="next_btn" id="nextBtn">NEXT</button>
+            
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
